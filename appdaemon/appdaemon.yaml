@@ -1,0 +1,21 @@
+appdaemon:
+  logfile: STDOUT
+  errorfile: STDERR
+  logsize: 100000
+  log_generations: 3
+  threads: 10
+  cert_verify: False
+  time_zone: Europe/Stockholm
+  api_port: 5000
+  api_key: !secret ad_api_key
+  longitude: 15.000000
+  latitude: 56.000000
+  elevation: 100
+  plugins:
+      HASS:
+        type: hass
+        ha_url: !secret ha_api_url
+        ha_key: !secret ha_api_key
+hadashboard:
+  dash_url: "http://0.0.0.0:5050"
+

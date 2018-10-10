@@ -1,0 +1,136 @@
+####################################################################
+# Docker compose file for all the servers needed for home-assistant
+# This compose file consists of the following server applications:
+# - Home-Assistant (external: localhost:8123)
+# - MySQL (internal: db:3306)
+# - AppDaemon (external: localhost:5050)
+# - HomeBridge (TBD)
+# - Mqtt (external: localhost:8883 internal: mqtt:1883)
+#
+# https://docs.docker.com/compose/
+# https://docs.docker.com/compose/compose-file/compose-file-v2/
+####################################################################
+
+version: "2"
+services:
+  ############################################################
+  # Home-assistant server (8123 public port)
+  # https://hub.docker.com/r/homeassistant/home-assistant/
+  ############################################################
+  home-assistant:
+    container_name: homeassistant_ha
+    image: homeassistant/home-assistant:latest
+    depends_on:
+      # Start database first
+      - db
+      # Start mqtt first
+      - mqtt
+    links:
+      # Link ports from db container
+      - db
+      # Link ports from mqtt container 
+      - mqtt
+    restart: always
+    volumes:
+      # Home-assistant config directory
+      - ./home-assistant:/config
+      # Timezone configuration (Linux only)
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      # Expose home-assistant port on host interface
+      - 8123:8123
+    env_file:
+      # Read all environment variables from the env file
+      - ./home-assistant/ha.env
+
+  ############################################################
+  # MySQL Server
+  # https://hub.docker.com/_/mysql/
+  ############################################################
+  db:
+    container_name: homeassistant_db
+    image: mysql:5.7
+    volumes:
+      # The data dir for mysql as volume for persistance
+      - ./mysql/data:/var/lib/mysql
+    restart: always
+    env_file:
+      # Read all environment variables from env file to configure mysql instance
+      - ./mysql/secrets.env
+
+  ############################################################
+  # AppDaemon Server (5050 public port)
+  # https://hub.docker.com/r/acockburn/appdaemon/
+  # http://appdaemon.readthedocs.io/en/latest/
+  ############################################################
+  appdaemon:
+    container_name: homeassistant_appdaemon
+    image: acockburn/appdaemon:latest
+    depends_on:
+      # Start home-assistant first
+      - home-assistant
+    links:
+      # Link ports from home-assistant container
+      - home-assistant
+    ports:
+      - 5050:5050
+    volumes:
+      # App daemon configuration
+      - ./appdaemon:/conf
+      # Timezone configuration (Linux only)
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+
+  ############################################################
+  # Homebridge Server (51862 public port, 5353/udp)
+  # https://github.com/nfarina/homebridge
+  # https://github.com/home-assistant/homebridge-homeassistant
+  ############################################################
+  homebridge:
+    container_name: homeassistant_homebridge
+    image: orbnedron/homebridge-homeassistant
+    depends_on:
+      - home-assistant
+    links:
+      - home-assistant
+    ports:
+      # Expose public port
+      - 51862:51862
+      # Avahi
+      - 5353:5353/udp
+    volumes:
+      # Configuration file
+      - ./homebridge:/config
+      # Timezone configuration (Linux only)
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    env_file:
+      # Read all environment variables from the env file
+      - ./homebridge/homebridge.env
+
+  ############################################################
+  # MQTT Server (8883 public port)
+  # https://hub.docker.com/_/eclipse-mosquitto/
+  ############################################################
+  mqtt:
+    container_name: homeassistant_mqtt
+    image: eclipse-mosquitto:latest
+    ports:
+      # Expose public TLS port 
+      - 8883:8883
+      # Internal port
+      - 1883
+    volumes:
+      # The mostuitto configuration file
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      # The authorization file
+      - ./mosquitto/passwd:/mosquitto/config/passwd
+      # Certificates
+      - ./mosquitto/cert:/mosquitto/config/cert
+      # Log directory
+      # - ./mosquitto/log:/mosquitto/log
+      # The data dir for persistance
+      - ./mosquitto/data:/mosquitto/data
+      # Timezone configuration (Linux only)
+      - /etc/localtime:/etc/localtime:ro
+    restart: always

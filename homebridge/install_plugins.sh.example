@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# To use this file to install plugins, rename/copy it to install_plugins.sh and add the file under volumes
+
+# Use this file to add additional homebridge plugins, if no plugins except for home-assistant are needed this file
+# don't have to exist. To find available plugins search npmjs.com for "homebridge plugin", examples are below.
+# If adding a plugin remember to add the config for the plugin in config.json
+
+# npm install -gs homebridge-harmonyhub
+# npm install -gs homebridge-netatmo
+# npm install -gs homebridge-nukiio
+# npm install -gs homebridge-synology
+# npm install -gs homebridge-pilight
+# npm install -gs homebridge-telldus-tdtool
+# npm install -gs homebridge-info
+# npm install -gs homebridge-hive
