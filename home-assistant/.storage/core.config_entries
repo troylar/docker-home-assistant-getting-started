@@ -1,0 +1,41 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "d98f737fff4b404da0e5bd39066f41e2",
+                "options": {},
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": "0x10, 0x0F, 0x03, 0x0B, 0x05, 0x06, 0x0A, 0x0E, 0x07, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10",
+                    "usb_path": "/dev/ttyACM0"
+                },
+                "domain": "zwave",
+                "entry_id": "cc5fc677e7fa4be0a84cfea756fa94ce",
+                "options": {},
+                "source": "user",
+                "title": "Z-Wave",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {},
+                "domain": "tplink",
+                "entry_id": "212ed9e37360457db4f3d40bec973037",
+                "options": {},
+                "source": "import",
+                "title": "TP-Link Smart Home",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

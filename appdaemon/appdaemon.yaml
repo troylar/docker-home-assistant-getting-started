@@ -5,17 +5,17 @@ appdaemon:
   log_generations: 3
   threads: 10
   cert_verify: False
-  time_zone: Europe/Stockholm
+  time_zone: America/New_York
   api_port: 5000
   api_key: !secret ad_api_key
-  longitude: 15.000000
-  latitude: 56.000000
-  elevation: 100
+  longitude: 34.09695
+  latitude: -83.969319
+  elevation: 1148
   plugins:
       HASS:
         type: hass
-        ha_url: !secret ha_api_url
-        ha_key: !secret ha_api_key
+        ha_url: "http://localhost:8123"
+        token: !secret ha_token
 hadashboard:
   dash_url: "http://0.0.0.0:5050"
 

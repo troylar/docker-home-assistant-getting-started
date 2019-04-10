@@ -1,0 +1,280 @@
+
+- cal_id: kwconnell@gmail.com
+  entities:
+  - device_id: kwconnell_gmail_com
+    ignore_availability: true
+    name: kwconnell@gmail.com
+    track: true
+
+- cal_id: r76e302eoicku6jvumg2ohs9go@group.calendar.google.com
+  entities:
+  - device_id: chloe_s_school_calendar
+    ignore_availability: true
+    name: Chloe's School Calendar
+    track: true
+
+- cal_id: 4drmeoicgkc791at7o9ad66ilndtqht9@import.calendar.google.com
+  entities:
+  - device_id: troy_larson_tripit
+    ignore_availability: true
+    name: Troy Larson (TripIt)
+    track: true
+
+- cal_id: 9nc8hn6s572om8b60jvtubo5kk@group.calendar.google.com
+  entities:
+  - device_id: kroger_2018_calendar
+    ignore_availability: true
+    name: 'Kroger 2018 Calendar '
+    track: true
+
+- cal_id: family10076270322371174961@group.calendar.google.com
+  entities:
+  - device_id: family
+    ignore_availability: true
+    name: Family
+    track: true
+
+- cal_id: r8mm29v4vij8q05vit5k5jbpc4@group.calendar.google.com
+  entities:
+  - device_id: kristy_s_work_schedule
+    ignore_availability: true
+    name: Kristy's work schedule
+    track: true
+
+- cal_id: t4dg16053q5qi1cbd0qk7574s8@group.calendar.google.com
+  entities:
+  - device_id: ignitionone_project_calendar
+    ignore_availability: true
+    name: IgnitionOne Project Calendar
+    track: true
+
+- cal_id: puq44h4f4kh0rba36d6r0i7g0o@group.calendar.google.com
+  entities:
+  - device_id: bodyplex_buford
+    ignore_availability: true
+    name: Bodyplex Buford
+    track: true
+
+- cal_id: 89cvi81fhpr57uar1jkdujf7f8@group.calendar.google.com
+  entities:
+  - device_id: nfcp_schedule
+    ignore_availability: true
+    name: NFCP Schedule
+    track: true
+
+- cal_id: 23k89nqosnf8iqms8m5pvtfc3g@group.calendar.google.com
+  entities:
+  - device_id: larson_master_calendar
+    ignore_availability: true
+    name: Larson Master Calendar
+    track: true
+
+- cal_id: aprillar@gmail.com
+  entities:
+  - device_id: aprillar_gmail_com
+    ignore_availability: true
+    name: aprillar@gmail.com
+    track: true
+
+- cal_id: heddjn8u66gc40oo3ch9r1svps@group.calendar.google.com
+  entities:
+  - device_id: 4_pharmacist_2017
+    ignore_availability: true
+    name: 4 Pharmacist 2017
+    track: true
+
+- cal_id: rbkh28nplmneo4qkvst1cpruj8@group.calendar.google.com
+  entities:
+  - device_id: health_calendar
+    ignore_availability: true
+    name: Health Calendar
+    track: true
+
+- cal_id: to9mq17ialnghksgomf4ass0lo@group.calendar.google.com
+  entities:
+  - device_id: school_schedule_2015_2016
+    ignore_availability: true
+    name: School Schedule 2015-2016
+    track: true
+
+- cal_id: chloelego@gmail.com
+  entities:
+  - device_id: chloelego_gmail_com
+    ignore_availability: true
+    name: chloelego@gmail.com
+    track: true
+
+- cal_id: npsh7mvr80l6ttnkmjgpvk24nk@group.calendar.google.com
+  entities:
+  - device_id: kristy_s_calendar
+    ignore_availability: true
+    name: Kristy's Calendar
+    track: true
+
+- cal_id: buford.middleweb@gmail.com
+  entities:
+  - device_id: buford_middleweb_gmail_com
+    ignore_availability: true
+    name: buford.middleweb@gmail.com
+    track: true
+
+- cal_id: ahffnstfpumue84atgf5mngb7c@group.calendar.google.com
+  entities:
+  - device_id: calvin_s_pollexy_calendar
+    ignore_availability: true
+    name: Calvin's Pollexy Calendar
+    track: true
+
+- cal_id: ph14m2rfns3p8su7s0m3gcnolg@group.calendar.google.com
+  entities:
+  - device_id: chantal_s_calendar
+    ignore_availability: true
+    name: Chantal's Calendar
+    track: true
+
+- cal_id: q0ngplhnq3q7aebcdlulrsku30@group.calendar.google.com
+  entities:
+  - device_id: kristy_s_2016_kroger_schedule_old
+    ignore_availability: true
+    name: Kristy's 2016 Kroger Schedule (OLD)
+    track: true
+
+- cal_id: 3g44vfek6j00s0660tuk4nh3jc@group.calendar.google.com
+  entities:
+  - device_id: kids_schedule
+    ignore_availability: true
+    name: Kids Schedule
+    track: true
+
+- cal_id: fitbodybootcamp.com_rchlbqs63cneb8gb7arms4gmeg@group.calendar.google.com
+  entities:
+  - device_id: buford_boot_camp
+    ignore_availability: true
+    name: Buford Boot Camp
+    track: true
+
+- cal_id: highschoolmillcreek@gmail.com
+  entities:
+  - device_id: mill_creek_high_school_master_calendar
+    ignore_availability: true
+    name: Mill Creek High School Master Calendar
+    track: true
+
+- cal_id: slvboed901gl65ovmtsmineaq8@group.calendar.google.com
+  entities:
+  - device_id: meals
+    ignore_availability: true
+    name: Meals
+    track: true
+
+- cal_id: o267mdn9bvrldqai9snhulpcio@group.calendar.google.com
+  entities:
+  - device_id: my_new_ignitionone_schedule
+    ignore_availability: true
+    name: My New IgnitionOne Schedule
+    track: true
+
+- cal_id: iv656iof9d8cphj32a8fjjhsko@group.calendar.google.com
+  entities:
+  - device_id: kroger_work_schedule_2017_correct
+    ignore_availability: true
+    name: Kroger Work Schedule 2017 (CORRECT)
+    track: true
+
+- cal_id: 45mjthcou76lg6vbi260hnrhtc@group.calendar.google.com
+  entities:
+  - device_id: family_calendar
+    ignore_availability: true
+    name: Family Calendar
+    track: true
+
+- cal_id: gbm1qt3jn0be03pntmsis8m6cs@group.calendar.google.com
+  entities:
+  - device_id: house_stuff
+    ignore_availability: true
+    name: House Stuff
+    track: true
+
+- cal_id: qabrtt2h3ddn2d23qgishsmngc@group.calendar.google.com
+  entities:
+  - device_id: lamba_brainard_test_calendar
+    ignore_availability: true
+    name: lamba_brainard Test Calendar
+    track: true
+
+- cal_id: b69f1hgiqf7ps475c38gqcbdac@group.calendar.google.com
+  entities:
+  - device_id: python_unit_test_calendar
+    ignore_availability: true
+    name: Python Unit Test Calendar
+    track: true
+
+- cal_id: qtg6fgf4bo1s9tmmrce591og44@group.calendar.google.com
+  entities:
+  - device_id: chloe_s_calendar
+    ignore_availability: true
+    name: Chloe's Calendar
+    track: true
+
+- cal_id: nd00qlp632b5sf4t540a56skq0@group.calendar.google.com
+  entities:
+  - device_id: weekly_schedule
+    ignore_availability: true
+    name: Weekly Schedule
+    track: true
+
+- cal_id: 5q8ca74h3vf9kqndea1vlmondk@group.calendar.google.com
+  entities:
+  - device_id: master_calendar_2015_2016
+    ignore_availability: true
+    name: Master Calendar 2015-2016
+    track: true
+
+- cal_id: vbvdckq8nqq4vlvian7ptggk44@group.calendar.google.com
+  entities:
+  - device_id: troy_s_work_travel
+    ignore_availability: true
+    name: Troy's Work Travel
+    track: true
+
+- cal_id: 2phkitc64jv9ujcffjhv5lte2s@group.calendar.google.com
+  entities:
+  - device_id: summer_2015_chloe_and_calvin
+    ignore_availability: true
+    name: Summer 2015 Chloe and Calvin
+    track: true
+
+- cal_id: lrlnm675gc7hlmseqlpf3if0hk@group.calendar.google.com
+  entities:
+  - device_id: todoist
+    ignore_availability: true
+    name: Todoist
+    track: true
+
+- cal_id: troylar@gmail.com
+  entities:
+  - device_id: troylar_gmail_com
+    ignore_availability: true
+    name: troylar@gmail.com
+    track: true
+
+- cal_id: u31dee687rndbrd13dmdje91gs@group.calendar.google.com
+  entities:
+  - device_id: nozbe
+    ignore_availability: true
+    name: Nozbe
+    track: true
+
+- cal_id: addressbook#contacts@group.v.calendar.google.com
+  entities:
+  - device_id: contacts
+    ignore_availability: true
+    name: Contacts
+    track: true
+
+- cal_id: en.usa#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_united_states
+    ignore_availability: true
+    name: Holidays in United States
+    track: true

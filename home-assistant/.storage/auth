@@ -1,0 +1,97 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "troy"
+                },
+                "id": "ea3d64661b974ad88cd14e97c0af7cc0",
+                "user_id": "4618014bbeec486eb614c1dffe2f1d37"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://10.20.5.30:8123/",
+                "client_name": null,
+                "created_at": "2019-04-10T19:30:49.311923+00:00",
+                "id": "0366660f41b04456b56ee233c9341d79",
+                "jwt_key": "d77261355461683e4a0dee88e7d348ff4080807a9bb5056660bf2e11b4323f91724a834169c86a5ae14659002db3650c4ba9e9686385593876dc4f890dc70af2",
+                "last_used_at": "2019-04-10T21:00:22.312033+00:00",
+                "last_used_ip": "10.20.100.29",
+                "token": "b267feae5c682dd68f740d53ad697e3617eb1e667511cdb323f8bd0b09166a139d0151460d248051c2a5a1de844a42dc27b75fd4b5ee46cbb9f1ad83a859e537",
+                "token_type": "normal",
+                "user_id": "4618014bbeec486eb614c1dffe2f1d37"
+            },
+            {
+                "access_token_expiration": 315360000.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": "appdaemon",
+                "created_at": "2019-04-10T20:54:33.520276+00:00",
+                "id": "0d04c7992f2b4886b4ca58b39190bf46",
+                "jwt_key": "60563e5f98857f8047f1895638c8449ec46735b19ee77723f15463785ad519734a7c73b61686d62c6462d98ecadfa969c4a1d4da31eb0cc5ddd102cb374fb274",
+                "last_used_at": "2019-04-10T20:54:33.520391+00:00",
+                "last_used_ip": null,
+                "token": "236bfa33ed5723fffc0cf84d73fd5a6fd73e571b8d65393f1c4740bc51c0dfb8bf0d9ec8e76308ed93e16599f39e1f6df1beea3b4cf0aa573db623fcebeb1dae",
+                "token_type": "long_lived_access_token",
+                "user_id": "4618014bbeec486eb614c1dffe2f1d37"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://myhome.calvinware.com/",
+                "client_name": null,
+                "created_at": "2019-04-10T21:05:41.881348+00:00",
+                "id": "a4f4e692b1b1412e9736843ce237fd51",
+                "jwt_key": "e6efe8be596122c6402e7873b045909384d0c6ace54c874a0405826be4e179229fa40cbc46260f52bcd82f18f4f557e541237c54fa9c3504bcfbdf0a94675326",
+                "last_used_at": "2019-04-10T21:05:41.881491+00:00",
+                "last_used_ip": "10.20.5.3",
+                "token": "9d4a3272e24f6afb477d8d8bace46f0b941d1b21a6d40eb4e74474c1b428735c1bc81fa4b4e3a69f5b4bfcbca52df86ed3b18f4f7939a1e0d6a6871d1ba7f998",
+                "token_type": "normal",
+                "user_id": "4618014bbeec486eb614c1dffe2f1d37"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "4618014bbeec486eb614c1dffe2f1d37",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Troy",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "f328965496fc46c3b5de88f276e90d99",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Home Assistant Cloud",
+                "system_generated": true
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

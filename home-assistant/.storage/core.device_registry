@@ -1,0 +1,168 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "04972c4023514dcba8d28ec6d3f518b9",
+                "identifiers": [
+                    [
+                        "zwave",
+                        2
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "Motion Detector",
+                "name": "Dome Motion Detector",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "64ee36bf4a4349199424c40e368378ef",
+                "identifiers": [
+                    [
+                        "zwave",
+                        4
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "Motion Detector",
+                "name": "Dome Motion Detector",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "db6b81b813ca4387a5bb8b8bebaa6d66",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "Aeotec",
+                "model": "ZW100 MultiSensor 6",
+                "name": "Aeotec ZW100 MultiSensor 6",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "3851af994b9e47548ccdce3ee78d611f",
+                "identifiers": [
+                    [
+                        "zwave",
+                        7
+                    ]
+                ],
+                "manufacturer": "Schlage",
+                "model": "FE599GR Wireless Door Lock",
+                "name": "Schlage FE599GR Wireless Door Lock",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c43d3e36403c4a888810d51cc0371d07",
+                "identifiers": [
+                    [
+                        "zwave",
+                        8
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "Motion Detector",
+                "name": "Dome Motion Detector",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "34c50ca3719f4321b392e92c2c00a871",
+                "identifiers": [
+                    [
+                        "zwave",
+                        9
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "Motion Detector",
+                "name": "Dome Motion Detector",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "1248f081c91b4598bcc55f49bf76de08",
+                "identifiers": [
+                    [
+                        "zwave",
+                        11
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc5fc677e7fa4be0a84cfea756fa94ce"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "85c763965ffb42b5ad3aac66feffbab9",
+                "identifiers": [
+                    [
+                        "zwave",
+                        12
+                    ]
+                ],
+                "manufacturer": "Ecolink",
+                "model": "Door/Window Sensor",
+                "name": "Ecolink Door/Window Sensor",
+                "name_by_user": null,
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

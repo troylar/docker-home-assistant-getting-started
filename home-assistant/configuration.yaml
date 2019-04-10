@@ -7,9 +7,9 @@ homeassistant:
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation:    !env_var                 HA_HOME_ELEVATION
   # metric for Metric, imperial for Imperial
-  unit_system: metric
+  unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: Europe/Stockholm
+  time_zone: America/New_York
   # Customization file
   customize: !include customize.yaml
 
@@ -23,8 +23,6 @@ frontend:
 config:
 
 http:
-  # Secrets are defined in the file secrets.yaml
-  api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
@@ -39,6 +37,53 @@ updater:
 
 # Discover some devices automatically
 discovery:
+
+cloud:
+
+ring:
+  username: troylar@gmail.com
+  password: !secret ring_password
+
+binary_sensor:
+  - platform: ring
+
+media_player:
+  - platform: mpd
+    host: 10.20.100.38
+    name: unused_mpd
+
+  - platform: mpd
+    host: 10.20.100.33
+    name: apricot_pi_mpd
+
+  - platform: mpd
+    host: 10.20.100.44
+    name: mince_pi_mpd
+
+  - platform: mpd
+    host: 10.20.100.10
+    name: apple_pi_mpd
+
+nest:
+  client_id: 2a20cc5d-3d5e-4821-b6b7-53c18de54417
+  client_secret: elF9NP1C2vXsWalDQpPnUnyGB
+
+google:
+  client_id: 63440173805-cnfo01elj65t0v55uv5qqme4q332ncm9.apps.googleusercontent.com
+  client_secret: 83DUXFsVPJdXI-x0OrP3-0Bq
+
+notify:
+  - platform: synology_chat
+    name: hass_synchat
+    resource: https://cloud.calvinware.com/webapi/entry.cgi?api=SYNO.Chat.External&method=incoming&version=2&token=%22z55hUrAsbUgqzwKvxv5Fw16L6efplazeNroDaiepFvNq5bFPIgzbtPWOHWXvlx4y%22
+
+tplink:
+  discovery: true
+
+influxdb:
+  host: 10.20.5.115
+  override_measurement: state
+  default_measurement: state
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -58,10 +103,6 @@ sun:
 # Weather prediction
 sensor:
   - platform: yr
-
-# Text to speech
-tts:
-  - platform: google
 
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -99,3 +140,8 @@ recorder:
       - sensor
       - switch
       - media_player
+
+tts:
+  - platform: amazon_polly
+    aws_access_key_id: AKIATJCLHJV7JG5QIRFP
+    aws_secret_access_key: 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

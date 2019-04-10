@@ -42,6 +42,8 @@ services:
     env_file:
       # Read all environment variables from the env file
       - ./home-assistant/ha.env
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
 
   ############################################################
   # MySQL Server
@@ -81,34 +83,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     restart: always
 
-  ############################################################
-  # Homebridge Server (51862 public port, 5353/udp)
-  # https://github.com/nfarina/homebridge
-  # https://github.com/home-assistant/homebridge-homeassistant
-  ############################################################
-  homebridge:
-    container_name: homeassistant_homebridge
-    image: orbnedron/homebridge-homeassistant
-    depends_on:
-      - home-assistant
-    links:
-      - home-assistant
-    ports:
-      # Expose public port
-      - 51862:51862
-      # Avahi
-      - 5353:5353/udp
-    volumes:
-      # Configuration file
-      - ./homebridge:/config
-      # Timezone configuration (Linux only)
-      - /etc/localtime:/etc/localtime:ro
-    restart: always
-    env_file:
-      # Read all environment variables from the env file
-      - ./homebridge/homebridge.env
-
-  ############################################################
+    ############################################################
   # MQTT Server (8883 public port)
   # https://hub.docker.com/_/eclipse-mosquitto/
   ############################################################
