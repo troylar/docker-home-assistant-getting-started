@@ -143,5 +143,5 @@ recorder:
 
 tts:
   - platform: amazon_polly
-    aws_access_key_id: AKIATJCLHJV7JG5QIRFP
-    aws_secret_access_key: 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
+    aws_access_key_id: !secret aws_access_key_id
+    aws_secret_access_key: !secret aws_secret_key
